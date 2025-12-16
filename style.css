@@ -52,8 +52,12 @@ body {
   border-radius: 8px;
 }
 @media (max-width: 768px) {
-  .top-header {
-    flex-direction: column;
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+  }
+}
+
   }
 
   .nav-menu {
