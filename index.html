@@ -3,24 +3,108 @@
 <head>
  <style>
 body {
-  background: yellow;
-}
-</style>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="C25wcf14BsKIfHu1LYfBp6dvYl2vDZeRtvYSogkXwHU" />
-<title>ਪੰਜਾਬੀ ਬਲੌਗ</title>
-<meta name="description" content="ਇੱਕ ਪੰਜਾਬੀ ਬਲੌਗ ਜਿੱਥੇ ਹੱਥ ਕਢਾਈ, ਪੰਜਾਬੀ ਕਲਾ ਅਤੇ ਸਭਿਆਚਾਰ ਬਾਰੇ ਲੇਖ ਹਨ।">
-<meta name="keywords" content="Punjabi Blog, ਹੱਥ ਕਢਾਈ, ਪੰਜਾਬੀ ਕਲਾ, Punjabi Culture">
-<meta name="author" content="ਸੰਤੋਸ਼ ਕੁਮਾਰੀ">
-<style>
-
-body{
-  <header class="top-header">
+<header class="top-header">
   <div class="logo">ਮੇਰਾ ਪੰਜਾਬੀ ਬਲੌਗ</div>
 
   <nav class="nav-menu">
+    <a href="index.html">ਮੁੱਖ ਸਫ਼ਾ</a>
+
+    <div class="dropdown">
+      <button class="dropbtn">ਬਲੌਗ ▾</button>
+      <div class="dropdown-content">
+        <a href="blogs.html">ਸਾਰੇ ਬਲੌਗ</a>
+        <a href="Blog1.html">ਹੱਥ ਕੜ੍ਹਾਈ</a>
+        <a href="Blog2.html">ਪੰਜਾਬੀ ਸੂਟ</a>
+        <a href="Blog3.html">ਟਿਪਸ</a>
+      </div>
+    </div>
+
+    <a href="about.html">ਸਾਡੇ ਬਾਰੇ</a>
+    <a href="contact.html">ਸੰਪਰਕ</a>
+  </nav>
+</header>
+
+}
+
+.dropdown-content a:hover {
+  background: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+<style>
+ body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.top-header {
+  background: linear-gradient(90deg, #7b0000, #b30000);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 30px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Menu */
+.nav-menu a,
+.dropbtn {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-menu a:hover,
+.dropdown:hover .dropbtn {
+  background: #fff;
+  color: #7b0000;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  min-width: 180px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  z-index: 999;
+}
+
+.dropdown-content a {
+  color: #7b0000;
+  padding: 10px 14px;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
     <a href="index.html">ਮੁੱਖ ਸਫ਼ਾ</a>
 
     <div class="dropdown">
