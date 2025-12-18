@@ -142,4 +142,7 @@ footer {
   padding: 10px 20px;
   cursor: pointer;
 }
+.nav-menu a.active {
+  border-bottom: 2px solid #fff;
+}
 
