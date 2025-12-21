@@ -96,6 +96,10 @@ body {
   font-size: 13px;
   color: #555;
 }
+body{
+  margin: 0;
+  padding: 0;
+}
 
 footer{
   background: #8b0000;
@@ -148,5 +152,12 @@ footer{
   background: #8b0000;   /* same red */
   color: #fff;
   border-left: 4px solid #fff;
+}
+.about-container{
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  line-height: 1.8;
+  font-size: 18px;
 }
 
