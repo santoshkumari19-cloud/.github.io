@@ -1,77 +1,180 @@
 <!DOCTYPE html>
 <html lang="pa">
 <head>
-  <meta charset="UTF-8">
-  <title>ਮੇਰਾ ਪੰਜਾਬੀ ਬਲੌਗ</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>ਮੇਰਾ ਪੰਜਾਬੀ ਬਲੌਗ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family:"Noto Sans Gurmukhi", Arial, sans-serif;
+            background:#f4f4f4;
+            color:#000;
+        }
+
+        /* Header */
+        header{
+            background:#8b0000;
+            color:#fff;
+            padding:15px 0;
+            text-align:center;
+        }
+
+        header h1{
+            margin:0;
+            font-size:28px;
+        }
+
+        nav{
+            margin-top:10px;
+        }
+
+        nav a{
+            color:#fff;
+            text-decoration:none;
+            margin:0 15px;
+            font-size:18px;
+        }
+
+        nav a:hover{
+            text-decoration:underline;
+        }
+
+        /* Main container */
+        .container{
+            max-width:1000px;
+            margin:40px auto;
+            background:#ffffff;
+            padding:40px;
+            border-radius:10px;
+        }
+
+        .container h2{
+            font-size:30px;
+            margin-top:0;
+        }
+
+        .container p{
+            font-size:18px;
+            line-height:1.9;
+        }
+
+        /* Blog cards */
+        .blog-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+            gap:30px;
+            margin-top:30px;
+        }
+
+        .blog-card{
+            border:1px solid #ddd;
+            border-radius:10px;
+            overflow:hidden;
+            transition:transform 0.2s;
+        }
+
+        .blog-card:hover{
+            transform:scale(1.02);
+        }
+
+        .blog-card img{
+            width:100%;
+            height:300px;
+            object-fit:cover;
+        }
+
+        .blog-content{
+            padding:20px;
+        }
+
+        .blog-content h3{
+            margin-top:0;
+            font-size:20px;
+            color:#8b0000;
+        }
+
+        .blog-content a{
+            text-decoration:none;
+            color:#8b0000;
+            font-weight:bold;
+        }
+
+        .blog-content a:hover{
+            text-decoration:underline;
+        }
+
+        .date{
+            font-size:14px;
+            color:#555;
+        }
+
+        /* Footer */
+        footer{
+            background:#8b0000;
+            color:#fff;
+            text-align:center;
+            padding:15px;
+            margin-top:40px;
+            font-size:15px;
+        }
+    </style>
 </head>
+
 <body>
-<header class="top-header">
-  <div class="logo">ਮੇਰਾ ਪੰਜਾਬੀ ਬਲੌਗ</div>
-      <nav class="nav-menu">
-    <a href="index.html">ਮੁੱਖ ਸਫਾ</a>
-      <div class="dropdown">
-      <button class="dropbtn">ਬਲੌਗ ▾</button>
-      <div class="dropdown-content">
-        <input type="text" id="searchInput"
-       placeholder="🔍 ਬਲੌਗ ਖੋਜੋ..."
-       onkeyup="searchBlog()"
-       style="width:100%; padding:10px; margin-bottom:20px;
-              border-radius:8px; border:1px solid #ccc;">
 
-        <a href="blog.html">ਸਾਰੇ ਬਲੌਗ</a>
-        <li><a href="categories.html">ਬਲੌਗ ਕੈਟੇਗਰੀ</a></li>
-       </div>
-    </div>
-
-    <a href="about.html">ਸਾਡੇ ਬਾਰੇ</a>
-       <a href="contact.html">ਸੰਪਰਕ ਕਰੋ</a>
+<header>
+    <h1>ਮੇਰਾ ਪੰਜਾਬੀ ਬਲੌਗ</h1>
+    <nav>
+        <a href="index.html">ਮੁੱਖ ਸਫ਼ਾ</a>
+        <a href="blog.html">ਬਲੌਗ</a>
+        <a href="about.html">ਸਾਡੇ ਬਾਰੇ</a>
+        <a href="contact.html">ਸੰਪਰਕ ਕਰੋ</a>
+    </nav>
 </header>
 
-<main class="container">
-  <h1>🙏 ਮੇਰੇ ਪੰਜਾਬੀ ਬਲੌਗ ਵਿੱਚ ਤੁਹਾਡਾ ਸਵਾਗਤ ਹੈ</h1>
-  <p> ਇੱਥੇ ਤੁਹਾਨੂੰ ਪੰਜਾਬੀ ਸਿਲਾਈ, ਕਢਾਈ ਅਤੇ ਹੱਥ ਕਲਾ ਬਾਰੇ ਜਾਣਕਾਰੀ ਮਿਲੇਗੀ।</p>
-  
-  <div style="display:flex;flex-wrap:wrap;gap:20px;">
+<div class="container">
+    <h2>🙏 ਮੇਰੇ ਪੰਜਾਬੀ ਬਲੌਗ ਵਿੱਚ ਤੁਹਾਡਾ ਸਵਾਗਤ ਹੈ</h2>
+    <p>
+        ਇੱਥੇ ਤੁਹਾਨੂੰ ਪੰਜਾਬੀ ਸਭਿਆਚਾਰ, ਲੋਕ ਕਲਾ, ਵਿਰਾਸਤ ਅਤੇ
+        <strong>ਕਢਾਈ</strong> ਵਰਗੀਆਂ ਰਵਾਇਤੀ ਕਲਾਵਾਂ ਬਾਰੇ ਜਾਣਕਾਰੀ ਮਿਲੇਗੀ।
+        ਸਾਡਾ ਮਕਸਦ ਪੰਜਾਬੀ ਵਿਰਾਸਤ ਨੂੰ ਸੰਭਾਲ ਕੇ ਅਗਲੀ ਪੀੜ੍ਹੀ ਤੱਕ ਪਹੁੰਚਾਉਣਾ ਹੈ।
+    </p>
 
-  <div class="blog-grid">
+    <h2>ਤਾਜ਼ਾ ਬਲੌਗ ਲੇਖ</h2>
 
-    <div class="blog-card">
-      <div style="width:260px;">
-      <img src="images/aari-hand-work.jpg" style="width:100%;border-redius:6px;">
-        <a href="blogs/blog1.html">ਹੱਥ ਕਢਾਈ ਦੀ ਮਹੱਤਤਾ</a>
-      <span>17 ਦਸੰਬਰ 2025</span>
-    </div></div></div>
+    <div class="blog-grid">
 
-    <div class="blog-card">
-      <div style="width:260px;">
-      <img src="images/image.jpg" style="width:100%;border-redius:6px;">
-      <a href="blogs/blog2.html">ਪੰਜਾਬੀ ਕਲਾ ਅਤੇ ਵਿਰਾਸਤ</a>
-      <span>17 ਦਸੰਬਰ 2025</span>
+        <!-- Blog 1 -->
+        <div class="blog-card">
+            <img src="images/kadhai1.jpg" alt="ਹੱਥ ਕਢਾਈ">
+            <div class="blog-content">
+                <h3>
+                    <a href="blog.html">ਹੱਥ ਕਢਾਈ ਦੀ ਮਹੱਤਾ</a>
+                </h3>
+                <p class="date">17 ਦਸੰਬਰ 2025</p>
+            </div>
+        </div>
+
+        <!-- Blog 2 -->
+        <div class="blog-card">
+            <img src="images/kadhai2.jpg" alt="ਪੰਜਾਬੀ ਕਲਾ">
+            <div class="blog-content">
+                <h3>
+                    <a href="blog.html">ਪੰਜਾਬੀ ਕਲਾ ਅਤੇ ਵਿਰਾਸਤ</a>
+                </h3>
+                <p class="date">17 ਦਸੰਬਰ 2025</p>
+            </div>
+        </div>
+
     </div>
 </div>
-  </div>
-</main>
 
-<footer class="site-footer">
-  © 2025 ਮੇਰਾ ਪੰਜਾਬੀ ਬਲੌਗ | ਸਭ ਹੱਕ ਰਾਖਵੇਂ
+<footer>
+    © 2025 ਮੇਰਾ ਪੰਜਾਬੀ ਬਲੌਗ | ਸਭ ਹੱਕ ਰਾਖਵੇਂ
 </footer>
+
 </body>
-  <script>
-function searchBlog() {
-    let input = document.getElementById("searchInput").value.toLowerCase();
-    let titles = document.getElementsByClassName("blog-title");
-
-    for (let i = 0; i < titles.length; i++) {
-        let card = titles[i].closest(".blog-card");
-        if (titles[i].innerText.toLowerCase().includes(input)) {
-            card.style.display = "block";
-        } else {
-            card.style.display = "none";
-        }
-    }
-}
-</script>
-
 </html>
