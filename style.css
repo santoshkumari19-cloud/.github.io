@@ -204,4 +204,29 @@ footer{
 .submit-btn:hover {
   background-color: #073763;
 }
+/* Blog detail pages background fix */
+body {
+    background-color: #7b0000;
+    color: #ffffff;
+    font-family: 'Noto Sans Gurmukhi', sans-serif;
+}
+
+.blog-content {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.blog-content h1,
+.blog-content h2,
+.blog-content h3 {
+    color: #ffffff;
+}
+
+.blog-content p {
+    color: #f2f2f2;
+    line-height: 1.8;
+}
 
